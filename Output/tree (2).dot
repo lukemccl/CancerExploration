@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="TTC22 <= 7.953\ngini = 0.742\nsamples = 634\nvalue = [141, 136, 151, 206]\nclass = SARC", fillcolor="#fae8fc"] ;
+1 [label="GFAP <= 12.75\ngini = 0.489\nsamples = 343\nvalue = [2, 136, 1, 204]\nclass = SARC", fillcolor="#f2bef6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="DIP2A-IT1 <= 3.857\ngini = 0.029\nsamples = 206\nvalue = [2, 0, 1, 203]\nclass = SARC", fillcolor="#d83ce5"] ;
+1 -> 2 ;
+3 [label="ENSG00000232325.3 <= 7.974\ngini = 0.01\nsamples = 204\nvalue = [0, 0, 1, 203]\nclass = SARC", fillcolor="#d73ae5"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 203\nvalue = [0, 0, 0, 203]\nclass = SARC", fillcolor="#d739e5"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0]\nclass = PAAD", fillcolor="#399de5"] ;
+3 -> 5 ;
+6 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0, 0, 0]\nclass = ESCA", fillcolor="#e58139"] ;
+2 -> 6 ;
+7 [label="TMEM132C <= 0.793\ngini = 0.014\nsamples = 137\nvalue = [0, 136, 0, 1]\nclass = GBM", fillcolor="#48e53a"] ;
+1 -> 7 ;
+8 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1]\nclass = SARC", fillcolor="#d739e5"] ;
+7 -> 8 ;
+9 [label="gini = 0.0\nsamples = 136\nvalue = [0, 136, 0, 0]\nclass = GBM", fillcolor="#47e539"] ;
+7 -> 9 ;
+10 [label="AC016292.1 <= 4.976\ngini = 0.506\nsamples = 291\nvalue = [139, 0, 150, 2]\nclass = PAAD", fillcolor="#f1f8fd"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label="TUBB2A <= 11.89\ngini = 0.026\nsamples = 152\nvalue = [0, 0, 150, 2]\nclass = PAAD", fillcolor="#3c9ee5"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 150\nvalue = [0, 0, 150, 0]\nclass = PAAD", fillcolor="#399de5"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 2]\nclass = SARC", fillcolor="#d739e5"] ;
+11 -> 13 ;
+14 [label="gini = 0.0\nsamples = 139\nvalue = [139, 0, 0, 0]\nclass = ESCA", fillcolor="#e58139"] ;
+10 -> 14 ;
+}
